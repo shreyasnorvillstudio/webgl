@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samiran · Sarees &amp; Shirts, Woven in India</title>
+    <meta name="description" content="Samiran — contemporary Indian clothing. Handwoven silk and handloom sarees, iron cotton, powerlook and checked shirts." />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Samiran" />
+    <meta property="og:title" content="Samiran · Sarees &amp; Shirts, Woven in India" />
+    <meta property="og:description" content="Handwoven silk and handloom sarees, iron cotton, powerlook and checked shirts." />
+    <meta name="theme-color" content="#F5EFE6" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://static.wixstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#app">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <button class="icon-btn menu-btn" type="button" data-open-menu aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M3 7h16M3 15h16" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+        </button>
+        <a class="wordmark" href="/" data-link aria-label="Samiran home">Samiran</a>
+        <nav class="nav" aria-label="Primary">
+          <ul>
+            <li><a href="/shop" data-link>Shop all</a></li>
+          </ul>
+          <ul data-nav-cats></ul>
+        </nav>
+        <button class="icon-btn bag-btn" type="button" data-open-cart data-cart-label aria-label="Bag, 0 items">
+          <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M4.5 7.5h13l-1 11.5h-11zM8 7.5V6a3 3 0 0 1 6 0v1.5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+          <span class="bag-label">Bag</span>
+          <span class="badge" data-cart-count hidden>0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <div>
+          <p class="wordmark wordmark--lg">Samiran</p>
+          <p class="muted">Sarees and shirts, woven in India and cut for the way you live now.</p>
+        </div>
+        <nav aria-label="Footer">
+          <p class="fgroup__title">Shop</p>
+          <ul>
+            <li><a href="/shop" data-link>Shop all</a></li>
+          </ul>
+          <ul data-foot-cats></ul>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© <span id="year">2026</span> Samiran</span>
+        <span>Woven in India</span>
+      </div>
+    </footer>
+
+    <!-- Overlays (mounted at the document root) -->
+    <div class="overlay overlay--right" id="cart-drawer" data-overlay hidden role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="scrim" data-scrim></div>
+      <div class="panel">
+        <div class="panel__head">
+          <h2 id="cart-title" class="display-s">Your bag</h2>
+          <button class="icon-btn" type="button" data-close aria-label="Close bag" data-autofocus>
+            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+        </div>
+        <p class="sr-only" role="status" aria-live="polite" data-cart-status></p>
+        <div class="panel__body" data-cart-body></div>
+        <div class="panel__foot" data-cart-foot hidden>
+          <div data-subtotal></div>
+          <p class="muted small">Shipping and taxes are calculated at checkout</p>
+          <button class="btn btn--wide" type="button" data-checkout>Continue to secure checkout</button>
+          <p class="field-error" role="alert" data-checkout-error></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay overlay--left" id="mobile-nav" data-overlay hidden role="dialog" aria-modal="true" aria-label="Menu">
+      <div class="scrim" data-scrim></div>
+      <div class="panel">
+        <div class="panel__head">
+          <span class="wordmark">Samiran</span>
+          <button class="icon-btn" type="button" data-close aria-label="Close menu" data-autofocus>
+            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+        </div>
+        <nav class="mnav panel__body" aria-label="Mobile">
+          <ul>
+            <li><a href="/" data-link>Home</a></li>
+            <li><a href="/shop" data-link>Shop all</a></li>
+          </ul>
+          <ul data-mnav-cats></ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="overlay overlay--bottom" id="filter-sheet" data-overlay hidden role="dialog" aria-modal="true" aria-labelledby="filter-title">
+      <div class="scrim" data-scrim></div>
+      <div class="panel">
+        <div class="panel__head">
+          <h2 id="filter-title" class="display-s">Filters</h2>
+          <button class="icon-btn" type="button" data-close aria-label="Close filters" data-autofocus>
+            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5"/></svg>
+          </button>
+        </div>
+        <div class="panel__body filters" data-sheet-body></div>
+        <div class="panel__foot panel__foot--row">
+          <button class="btn btn--ghost" type="button" data-sheet-clear>Clear</button>
+          <button class="btn" type="button" data-apply>Apply filters</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
